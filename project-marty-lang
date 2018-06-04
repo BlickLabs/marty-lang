@@ -1,0 +1,13 @@
+server {
+  listen 80;
+  listen [::]:80;
+
+  root /home/static/marty-lang;
+  index index.html index.htm;
+
+  server_name sandbox.marty-lang.getmore.mx;
+
+  location / {
+      try_files $uri $uri/ =404;
+  }
+}
