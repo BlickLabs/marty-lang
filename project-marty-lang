@@ -5,7 +5,7 @@ server {
   root /home/static/marty-lang;
   index index.html index.htm;
 
-  server_name www.sandbox.marty-lang.getmore.mx sandbox.marty-lang.getmore.mx;
+  server_name sandbox.marty-proof.getmore.mx;
 
   location / {
       try_files $uri $uri/ =404;
